@@ -1,0 +1,12 @@
+# Core scientific stack
+pandas>=2.0
+numpy>=1.26
+scipy>=1.12
+gensim>=4.3
+scikit-learn>=1.5
+nltk>=3.8
+tqdm>=4.66
+torch>=2.2
+
+# Optional: GPU extras for Windows/Linux only
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
