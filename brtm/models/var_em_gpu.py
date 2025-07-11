@@ -26,7 +26,6 @@ def var_em_gpu_fixed(doc_data, doc_lengths, kept_topics, phi_init, lda_model, bo
         for bow in bow_docs
     ], device=DEVICE, dtype=torch.float32)[:, kept_topics]
 
-    # Key fix: ensure γ has a reasonable scale
     gamma = gamma_init * 10 + CFG["alpha_k"]
 
     if domain_name == "D":  # Debug info for the first domain only
